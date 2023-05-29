@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Factify</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+<body>
+    <div class="all">
+        <h1 id="factify">Factify</h1>
+        <div class="form-container">
+            <form method="post">
+                <input type="text" id="input-text" name="query" value="{{ request.form['query'] }}"/>
+                <input type="submit" value="Submit" />
+            </form>
+        </div>
+        <div id="output">
+            {% for query in queries %}
+            <a href="#">
+                <h2>{{ query['query'] }}</h2>
+            </a>
+            <span class="badge badge-primary">{{ query['created'] }}</span>
+            <hr>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

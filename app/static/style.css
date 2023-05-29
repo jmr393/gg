@@ -1,0 +1,57 @@
+/* style.css */
+
+/* Set the background color to a darker shade of purple */
+body {
+    background-color: #14033E; /* Updated color to a darker shade of purple */
+}
+
+/* Center the text input both horizontally and vertically */
+.all {
+    display: flex;
+    flex-direction: column; /* Set flex direction to column for padding between elements */
+    align-items: left;
+}
+
+/* Center the 'Factify' text block both horizontally and vertically */
+#factify {
+    display: flex;
+    align-items: left;
+    color: #FFFFFF; /* Set the text color to white */
+}
+
+/* Center the text input both horizontally and vertically */
+.form-container {
+    display: flex;
+    flex-direction: row; /* Set flex direction to column for padding between elements */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the text input */
+.form-container input[type="text"] {
+    font-size: 18px;
+    width: 500px;
+    padding: 10px;
+    border: none;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 10px; /* Add margin between the title and the text input */
+}
+
+/* Style the submit button */
+.form-container input[type="submit"] {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #EE82EE;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style the output text */
+.output-text {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #FFFFFF;
+}
